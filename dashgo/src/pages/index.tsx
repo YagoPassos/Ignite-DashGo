@@ -13,7 +13,7 @@ export default function SignIn() {
 				as='form'
 				width="100%"
 				maxWidth={360}
-				bg="gray.800"
+				bgColor="gray.800"
 				p='8'
 				borderRadius={8}
 				flexDir='column'
