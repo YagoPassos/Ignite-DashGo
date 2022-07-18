@@ -1,4 +1,5 @@
 import { Button, Flex, Stack, FormLabel, FormControl } from "@chakra-ui/react"
+import Link from "next/link"
 import { Input } from "../components/Form/input"
 
 export default function SignIn() {
@@ -19,11 +20,12 @@ export default function SignIn() {
 				flexDir='column'
 			>
 				<Stack spacing='4'>
-					<Input name="email" type="email" label="Email"/> 
-					<Input name="password" type="password" label="Password"/>
+					<Input name="email" type="email" label="Email" />
+					<Input name="password" type="password" label="Password" />
 				</Stack>
-
-				<Button type='submit' mt='6' colorScheme='pink' size='lg'> Entrar</Button>
+				<Link href='/dashboard'>
+					<Button type='submit' mt='6' colorScheme='pink' size='lg'> Entrar</Button>
+				</Link>
 			</Flex>
 		</Flex >
 	)
